@@ -96,7 +96,7 @@
   ],
   "items": [
     {
-      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest",
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1",
       "type": "Manifest",
       "label": { "none": ["Pantalone classico"] },
       "summary": { "none": ["Image"] },
@@ -121,6 +121,36 @@
           "id": "https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149",
           "type": "Text",
           "label": { "none": ["Pantalone classico"] },
+          "format": "text/html"
+        }
+      ]
+    },
+    {
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-2",
+      "type": "Manifest",
+      "label": { "none": ["Francatrippa"] },
+      "summary": { "none": ["Image"] },
+      "thumbnail": [
+        {
+          "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/42d07b28-083e-4dfb-a3e9-88f2dfc3a571/full/200,/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "service": [
+            {
+              "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/42d07b28-083e-4dfb-a3e9-88f2dfc3a571",
+              "profile": "http://iiif.io/api/image/2/level2.json",
+              "type": "ImageService2"
+            }
+          ],
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "homepage": [
+        {
+          "id": "https://dc.library.northwestern.edu/items/a037a4fb-add4-40af-8add-9a02e5573471",
+          "type": "Text",
+          "label": { "none": ["Francatrippa"] },
           "format": "text/html"
         }
       ]

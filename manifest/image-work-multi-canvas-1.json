@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest",
+  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1",
   "type": "Manifest",
   "label": {
     "none": ["Pantalone classico"]
@@ -181,7 +181,7 @@
   ],
   "items": [
     {
-      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/0",
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/0",
       "type": "Canvas",
       "width": 3780,
       "height": 4440,
@@ -190,14 +190,14 @@
       },
       "items": [
         {
-          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/0/page/0",
+          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/0/page/0",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/0/page/0/annotation/0",
+              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/0/page/0/annotation/0",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/0",
+              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/0",
               "body": {
                 "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f/full/600,/0/default.jpg",
                 "type": "Image",
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/1",
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/1",
       "type": "Canvas",
       "width": 5010,
       "height": 4396,
@@ -227,14 +227,14 @@
       },
       "items": [
         {
-          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/1/page/0",
+          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/1/page/0",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/1/page/0/annotation/0",
+              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/1/page/0/annotation/0",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/1",
+              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/1",
               "body": {
                 "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/b6359e7f-070c-4c86-aee1-515e5b6604e2/full/600,/0/default.jpg",
                 "type": "Image",
@@ -255,7 +255,7 @@
       ]
     },
     {
-      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/2",
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/2",
       "type": "Canvas",
       "width": 7230,
       "height": 5428,
@@ -264,14 +264,14 @@
       },
       "items": [
         {
-          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/2/page/0",
+          "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/2/page/0",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/2/page/0/annotation/0",
+              "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/2/page/0/annotation/0",
               "type": "Annotation",
               "motivation": "painting",
-              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest/canvas/2",
+              "target": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1/canvas/2",
               "body": {
                 "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/ca2acc2b-df00-4c6d-8373-ab6d5af17714/full/600,/0/default.jpg",
                 "type": "Image",
