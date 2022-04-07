@@ -160,7 +160,7 @@
         "en": ["Northwestern University Libraries Digital Collections API"]
       },
       "format": "application/json",
-      "profile": "https://dc.library.northwestern.edu/api/item/context.json"
+      "profile": "https://dc.library.northwestern.edu/api/items/context.json"
     }
   ],
   "thumbnail": [

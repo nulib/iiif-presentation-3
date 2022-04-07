@@ -1,0 +1,129 @@
+{
+  "@context": ["http://iiif.io/api/presentation/3/context.json"],
+  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-collection",
+  "type": "Collection",
+  "label": {
+    "none": ["Commedia dell'Arte: The Masks of Antonio Fava"]
+  },
+  "summary": {
+    "none": [
+      "The Commedia dell'Arte, the famous improvisational theatre style born in Renaissance Italy, remains a major influence in today's theatre. Antonio Fava is an actor, comedian, author, director, musician, mask maker and Internationally renowned Maestro of Commedia dell'Arte."
+    ]
+  },
+  "homepage": [
+    {
+      "id": "https://dc.library.northwestern.edu/collections/c373ecd2-2c45-45f2-9f9e-52dc244870bd",
+      "type": "Text",
+      "label": { "none": ["Commedia dell'Arte: The Masks of Antonio Fava"] },
+      "format": "text/html"
+    }
+  ],
+  "logo": [
+    {
+      "id": "https://www.northwestern.edu/brand/images/wordmark/wordmark-vert.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "width": 400,
+      "height": 210
+    }
+  ],
+  "provider": [
+    {
+      "id": "https://www.library.northwestern.edu/",
+      "type": "Agent",
+      "label": {
+        "en": ["Northwestern University Libraries"]
+      },
+      "homepage": [
+        {
+          "id": "https://dc.library.northwestern.edu/",
+          "type": "Text",
+          "label": {
+            "en": ["Northwestern University Libraries Digital Collections"]
+          },
+          "format": "text/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https://www.northwestern.edu/brand/images/wordmark/wordmark-vert.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "width": 400,
+          "height": 210
+        }
+      ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://dc.library.northwestern.edu/api/collections/c373ecd2-2c45-45f2-9f9e-52dc244870bd",
+      "type": "Dataset",
+      "label": {
+        "en": ["Northwestern University Libraries Digital Collections API"]
+      },
+      "format": "application/json",
+      "profile": "https://dc.library.northwestern.edu/api/items/context.json"
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "none": ["Attribution"]
+    },
+    "value": {
+      "none": [
+        "Courtesy of Northwestern University Libraries",
+        "These images are from material in the collections of the Charles Deering McCormick Library of Special Collections of Northwestern University Libraries, and are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted."
+      ]
+    }
+  },
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/",
+  "thumbnail": [
+    {
+      "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f/full/200,/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "service": [
+        {
+          "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f",
+          "profile": "http://iiif.io/api/image/2/level2.json",
+          "type": "ImageService2"
+        }
+      ],
+      "width": 200,
+      "height": 200
+    }
+  ],
+  "items": [
+    {
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/image-manifest",
+      "type": "Manifest",
+      "label": { "none": ["Pantalone classico"] },
+      "summary": { "none": ["Image"] },
+      "thumbnail": [
+        {
+          "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f/full/200,/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "service": [
+            {
+              "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f",
+              "profile": "http://iiif.io/api/image/2/level2.json",
+              "type": "ImageService2"
+            }
+          ],
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "homepage": [
+        {
+          "id": "https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149",
+          "type": "Text",
+          "label": { "none": ["Pantalone classico"] },
+          "format": "text/html"
+        }
+      ]
+    }
+  ]
+}
