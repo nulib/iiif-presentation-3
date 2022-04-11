@@ -36,14 +36,62 @@ https://iiif.io/api/presentation/3.0/#behavior
 
 ### Manifest
 
+#### partOf
+All manifests SHOULD include a `partOf` property as all our published works are a part of a collection having a dereferencable IIIF Collection `id`. We MAY also choose to extend out properties in `partOf`to provide minimal contextual information about a work's parent collection -- doing so could limit number of requests on IIIF Collection resources that may have large items length. 
+
+https://iiif.io/api/presentation/3.0/#partof
+
+```json
+{
+  "partOf": [
+    {
+      "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/collections/iiif-image-collection",
+      "type": "Collection",
+      "label": { "none": ["Commedia dell'Arte: The Masks of Antonio Fava"] },
+      "summary": {
+        "none": [
+          "The Commedia dell'Arte, the famous improvisational theatre style born in Renaissance Italy, remains a major influence in today's theatre. Antonio Fava is an actor, comedian, author, director, musician, mask maker and Internationally renowned Maestro of Commedia dell'Arte."
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://dc.library.northwestern.edu/collections/c373ecd2-2c45-45f2-9f9e-52dc244870bd",
+          "type": "Text",
+          "label": {
+            "none": ["Commedia dell'Arte: The Masks of Antonio Fava"]
+          },
+          "format": "text/html"
+        }
+      ],
+      "thumbnail": [
+        {
+          "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f/full/200,/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "service": [
+            {
+              "id": "https://iiif.stack.rdc.library.northwestern.edu/iiif/2/180682c9-dfaf-4881-b7b6-1f2f21092d4f",
+              "profile": "http://iiif.io/api/image/2/level2.json",
+              "type": "ImageService2"
+            }
+          ],
+          "width": 200,
+          "height": 200
+        }
+      ]
+    }
+  ]
+}
+```
+
 #### requiredStatement
 
-All manifests SHOULD include a `requiredStatement` with a `label` of **Attribution** and a `value` of **Courtesy of Northwestern University Libraries**. If a work also has a distinct **Terms of Use** value, this SHOULD also be appended to the `value` array.
+All manifests MUST include a `requiredStatement` with a `label` of **Attribution** and a `value` of **Courtesy of Northwestern University Libraries**. If a work also has a distinct **Terms of Use** value, this SHOULD also be appended to the `value` array.
 
 https://iiif.io/api/presentation/3.0/#requiredstatement
 
 _Default_
-```jsx
+```json
 {
 "requiredStatement": {
   "label": {
@@ -58,7 +106,7 @@ _Default_
 ```
 
 _Terms of Use_
-```jsx
+```json
 {
 "requiredStatement": {
   "label": {
@@ -73,12 +121,19 @@ _Terms of Use_
 }
 ```
 
+#### rights
 
-#### partOf
-All manifests SHOULD include a `partOf` property as all our published works are a part of a collection having a dereferencable IIIF Collection `id`.
+We SHOULD include the dereferenceable URI from a work's Rights Statement.
 
-https://iiif.io/api/presentation/3.0/#partof
+https://iiif.io/api/presentation/3.0/#rights
 
+> The value MUST be drawn from the set of Creative Commons license URIs, the RightsStatements.org rights statement URIs, or those added via the extension mechanism. 
+
+```json
+{
+  "rights": "http://rightsstatements.org/vocab/InC/1.0/"
+}
+```
 
 ### Collection
 
