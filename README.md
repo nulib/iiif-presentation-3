@@ -11,6 +11,8 @@ A place to mock together Northwestern works and collections as [IIIF Presentatio
 
 A IIIF resource representing a work.
 
+[Pantalone classico](https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149) was selected as an example work for mocking a IIIF Manifest.
+
 - [GitHub Example](https://github.com/nulib/iiif-presentation-3/blob/main/manifest/image-work-multi-canvas-1.json)
 - [API Example](https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1)
 - [View in Mirador](https://projectmirador.org/embed/?iiif-content=https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-manifest-1)
@@ -273,7 +275,7 @@ https://iiif.io/api/presentation/3.0/#partof
 
 ### logo
 
-We SHOULD include a `logo` property on a Manifest. If we choose to, we MAY want to provide the Northwestern Logo wordmark via a IIIF image service. Note that logo on a Manifest is the only currently for a logo to render in Mirador 3 -- and the `provider` logo is ignored.
+We SHOULD include a `logo` property on a Manifest. The Libraries and RDC likely SHOULD host a permanant location of this web resource. If we choose to, we MAY want to provide the Northwestern Logo wordmark via a IIIF image service. Note that logo on a Manifest is the only currently for a logo to render in Mirador 3 -- and the `provider` logo is ignored.
 
 > It is recommended that a IIIF Image API service be available for this image for other manipulations such as resizing.
 
@@ -479,6 +481,8 @@ All works should contain at least one fileset that will correspond to a Canvas i
 ## Collection
 
 A IIIF resource representing a collection.
+
+[Commedia dell'Arte: The Masks of Antonio Fava](https://dc.library.northwestern.edu/collections/c373ecd2-2c45-45f2-9f9e-52dc244870bd) was selected as an example collection for mocking a IIIF Collection.
 
 - [GitHub Example](https://github.com/nulib/iiif-presentation-3/blob/main/collection/image-works.json)
 - [API Example](https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/collections/iiif-image-collection)
