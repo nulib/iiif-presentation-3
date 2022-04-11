@@ -25,7 +25,7 @@ https://iiif.io/api/presentation/3.0/#label
 ```
 
 ### Behavior
-We do not include behavior until we have have method for determining this. As such clients SHOULD interpret our IIIF resources as `individuals`
+We do not include behavior until we have have method for determining this. Clients SHOULD interpret our omission of `behavior` on IIIF resources as `individuals`
 
 https://iiif.io/api/presentation/3.0/#behavior
 
@@ -43,6 +43,9 @@ https://iiif.io/api/presentation/3.0/#partof
 
 
 ### Collection
+
+#### partOf
+
 Collections MAY include a `partOf` property if we decide to create a top-level collection of collections.
 https://iiif.io/api/presentation/3.0/#partof
 
