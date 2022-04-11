@@ -32,14 +32,14 @@
       "id": "https://www.library.northwestern.edu/",
       "type": "Agent",
       "label": {
-        "en": ["Northwestern University Libraries"]
+        "none": ["Northwestern University Libraries"]
       },
       "homepage": [
         {
           "id": "https://dc.library.northwestern.edu/",
           "type": "Text",
           "label": {
-            "en": ["Northwestern University Libraries Digital Collections"]
+            "none": ["Northwestern University Libraries Digital Collections"]
           },
           "format": "text/html"
         }
@@ -60,7 +60,7 @@
       "id": "https://dc.library.northwestern.edu/api/collections/c373ecd2-2c45-45f2-9f9e-52dc244870bd",
       "type": "Dataset",
       "label": {
-        "en": ["Northwestern University Libraries Digital Collections API"]
+        "none": ["Northwestern University Libraries Digital Collections API"]
       },
       "format": "application/json",
       "profile": "https://dc.library.northwestern.edu/api/items/context.json"

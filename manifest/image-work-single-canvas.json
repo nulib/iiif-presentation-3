@@ -3,18 +3,18 @@
   "id": "http://127.0.0.1:8080/fixtures/iiif/collection/nez-perce/01-half-moon.json",
   "type": "Manifest",
   "label": {
-    "en": ["Half Moon - Nez Percé"]
+    "none": ["Half Moon - Nez Percé"]
   },
   "summary": {
-    "en": [
+    "none": [
       "written, illustrated, and published by Edward S. Curtis ; edited by Frederick Webb Hodge ; foreword by Theodore Roosevelt ; field research conducted under the patronage of J. Pierpont Morgan. ; Original photogravures produced in Boston by John Andrew & Son from 1899-1910."
     ]
   },
   "metadata": [
     {
-      "label": { "en": ["Contributor"] },
+      "label": { "none": ["Contributor"] },
       "value": {
-        "en": [
+        "none": [
           "Curtis, Edward S., 1868-1952 (Author)",
           "Curtis, Edward S., 1868-1952 (Illustrator)",
           "Curtis, Edward S., 1868-1952 (Publisher)",
@@ -27,41 +27,41 @@
       }
     },
     {
-      "label": { "en": ["Cultural Context"] },
+      "label": { "none": ["Cultural Context"] },
       "value": {
-        "en": [
+        "none": [
           "Content on this site is drawn from a historical source which includes materials that may contain offensive images or language reflecting the nature of Settler Colonialism in America. Such materials should be viewed in the context of the time and place in which they were created. The images and text in this site are presented as specific, original artifacts recording the attitudes, perspectives and beliefs of a different era. Northwestern University does not endorse the views expressed in this collection which may contain images and text offensive to some researchers."
         ]
       }
     },
     {
-      "label": { "en": ["Date"] },
-      "value": { "en": ["1910"] }
+      "label": { "none": ["Date"] },
+      "value": { "none": ["1910"] }
     },
     {
-      "label": { "en": ["Dimensions"] },
+      "label": { "none": ["Dimensions"] },
       "value": {
-        "en": ["18.6 x 13.5 cm [image size], 23 x 17 cm [plate size]"]
+        "none": ["18.6 x 13.5 cm [image size], 23 x 17 cm [plate size]"]
       }
     },
     {
-      "label": { "en": ["Genre"] },
-      "value": { "en": ["photomechanical prints", "photogravures (prints)"] }
+      "label": { "none": ["Genre"] },
+      "value": { "none": ["photomechanical prints", "photogravures (prints)"] }
     },
     {
-      "label": { "en": ["Language"] },
-      "value": { "en": ["English"] }
+      "label": { "none": ["Language"] },
+      "value": { "none": ["English"] }
     },
     {
-      "label": { "en": ["Location"] },
+      "label": { "none": ["Location"] },
       "value": {
-        "en": ["Washington (State)--Seattle", "Massachusetts--Norwood"]
+        "none": ["Washington (State)--Seattle", "Massachusetts--Norwood"]
       }
     },
     {
-      "label": { "en": ["Subject"] },
+      "label": { "none": ["Subject"] },
       "value": {
-        "en": [
+        "none": [
           "Nez Percé Indians",
           "Walla Walla Indians",
           "Umatilla Indians",
@@ -74,10 +74,10 @@
   ],
   "requiredStatement": {
     "label": {
-      "en": ["Attribution"]
+      "none": ["Attribution"]
     },
     "value": {
-      "en": ["Courtesy of Northwestern University Libraries"]
+      "none": ["Courtesy of Northwestern University Libraries"]
     }
   },
   "rights": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
@@ -104,7 +104,7 @@
       "width": 2161,
       "height": 3072,
       "label": {
-        "en": ["Half Moon - Nez Percé"]
+        "none": ["Half Moon - Nez Percé"]
       },
       "items": [
         {

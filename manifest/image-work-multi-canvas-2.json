@@ -124,14 +124,14 @@
       "id": "https://www.library.northwestern.edu/",
       "type": "Agent",
       "label": {
-        "en": ["Northwestern University Libraries"]
+        "none": ["Northwestern University Libraries"]
       },
       "homepage": [
         {
           "id": "https://dc.library.northwestern.edu/",
           "type": "Text",
           "label": {
-            "en": ["Northwestern University Libraries Digital Collections"]
+            "none": ["Northwestern University Libraries Digital Collections"]
           },
           "format": "text/html"
         }
@@ -152,7 +152,7 @@
       "id": "https://dc.library.northwestern.edu/api/items/a037a4fb-add4-40af-8add-9a02e5573471",
       "type": "Dataset",
       "label": {
-        "en": ["Northwestern University Libraries Digital Collections API"]
+        "none": ["Northwestern University Libraries Digital Collections API"]
       },
       "format": "application/json",
       "profile": "https://dc.library.northwestern.edu/api/items/context.json"
@@ -181,7 +181,7 @@
       "width": 4596,
       "height": 3948,
       "label": {
-        "en": ["Front"]
+        "none": ["Front"]
       },
       "items": [
         {
@@ -218,7 +218,7 @@
       "width": 5968,
       "height": 4240,
       "label": {
-        "en": ["Left"]
+        "none": ["Left"]
       },
       "items": [
         {
@@ -255,7 +255,7 @@
       "width": 5644,
       "height": 4264,
       "label": {
-        "en": ["Right"]
+        "none": ["Right"]
       },
       "items": [
         {
