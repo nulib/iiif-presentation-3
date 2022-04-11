@@ -4,8 +4,8 @@ A place to mock together Northwestern works and collections as [IIIF Presentatio
 
 ## Common Assumptions
 
-
 ### Internationalization
+
 International Strings have a language of `none` unless we have a metadata mechanism for determining this.
 
 https://iiif.io/api/presentation/3.0/#label
@@ -25,17 +25,93 @@ https://iiif.io/api/presentation/3.0/#label
 ```
 
 ### Behavior
+
 We do not include behavior until we have have method for determining this. Clients SHOULD interpret our omission of `behavior` on IIIF resources as `individuals`
 
 https://iiif.io/api/presentation/3.0/#behavior
 
-*Individuals*
-> Valid on Collections, Manifests, and Ranges. For Collections that have this behavior, each of the included Manifests are distinct objects in the given order. For Manifests and Ranges, the included Canvases are distinct views, and should not be presented in a page-turning interface. **This is the default layout behavior if not specified.** Disjoint with unordered, continuous, and paged.
+_Individuals_
 
+> Valid on Collections, Manifests, and Ranges. For Collections that have this behavior, each of the included Manifests are distinct objects in the given order. For Manifests and Ranges, the included Canvases are distinct views, and should not be presented in a page-turning interface. **This is the default layout behavior if not specified.** Disjoint with unordered, continuous, and paged.
 
 ## Manifest
 
+### metadata
+
+All manifests SHOULD include a `metadata` property with an array of items for each distinct metadata label, e.g., Alternate Title, Subject, and Genre. We SHOULD omit **Rights Statement** and **Terms of Use** and instead use `rights` and `requiredStatement` for these respectively. We MAY also want to consider to including data currently included under _Find This Item_ such as Box Number and Folder Name within the `metadata` property.
+
+https://iiif.io/api/presentation/3.0/#metadata
+
+```json
+{
+  "metadata": [
+    {
+      "label": { "none": ["Alternate Title"] },
+      "value": { "none": ["Fava"] }
+    },
+    {
+      "label": { "none": ["Creator"] },
+      "value": { "none": ["Fava, Antonio, 1949-"] }
+    },
+    {
+      "label": { "none": ["Date"] },
+      "value": { "none": ["2012"] }
+    },
+    {
+      "label": { "none": ["Department"] },
+      "value": {
+        "none": ["Charles Deering McCormick Library of Special Collections"]
+      }
+    },
+    {
+      "label": { "none": ["Dimensions"] },
+      "value": { "none": ["18 x 15 x 16 cm"] }
+    },
+    {
+      "label": { "none": ["Genre"] },
+      "value": { "none": ["comic masks"] }
+    },
+    {
+      "label": { "none": ["Location"] },
+      "value": { "none": ["Reggio Emilia"] }
+    },
+    {
+      "label": { "none": ["Materials"] },
+      "value": { "none": ["1 mask : grey leather, elastic, fiber"] }
+    },
+    {
+      "label": { "none": ["Subject"] },
+      "value": {
+        "none": [
+          "Masks",
+          "Commedia dell'arte",
+          "Italian drama (Comedy)",
+          "Pantaloon (Fictitious character)"
+        ]
+      }
+    }
+  ]
+}
+```
+
+Distinct values relating to each label should itemized in an array.
+
+```json
+{
+  "label": { "none": ["Subject"] },
+  "value": {
+    "none": [
+      "Masks",
+      "Commedia dell'arte",
+      "Italian drama (Comedy)",
+      "Pantaloon (Fictitious character)"
+    ]
+  }
+}
+```
+
 ### partOf
+
 All manifests SHOULD include a `partOf` property as all our published works are a part of a collection having a dereferencable IIIF Collection `id`. We MAY also choose to extend out properties in `partOf`to provide minimal contextual information about a work's parent collection -- doing so could limit number of requests on IIIF Collection resources that may have large items length. Proposed properties include: `label`, `summary`, `homepage`, and `thumbnail`.
 
 https://iiif.io/api/presentation/3.0/#partof
@@ -90,32 +166,34 @@ All manifests MUST include a `requiredStatement` with a `label` of **Attribution
 https://iiif.io/api/presentation/3.0/#requiredstatement
 
 _Default_
+
 ```json
 {
-"requiredStatement": {
-  "label": {
-    "none": ["Attribution"]
-  },
-  "value": {
-    "none": [
-      "Courtesy of Northwestern University Libraries"
-    ]
+  "requiredStatement": {
+    "label": {
+      "none": ["Attribution"]
+    },
+    "value": {
+      "none": ["Courtesy of Northwestern University Libraries"]
+    }
   }
 }
 ```
 
 _Terms of Use_
+
 ```json
 {
-"requiredStatement": {
-  "label": {
-    "none": ["Attribution"]
-  },
-  "value": {
-    "none": [
-      "Courtesy of Northwestern University Libraries",
-      "These images are from material in the collections of the Charles Deering McCormick Library of Special Collections of Northwestern University Libraries, and are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted."
-    ]
+  "requiredStatement": {
+    "label": {
+      "none": ["Attribution"]
+    },
+    "value": {
+      "none": [
+        "Courtesy of Northwestern University Libraries",
+        "These images are from material in the collections of the Charles Deering McCormick Library of Special Collections of Northwestern University Libraries, and are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted."
+      ]
+    }
   }
 }
 ```
@@ -126,7 +204,7 @@ We SHOULD include the dereferenceable URI from a work's Rights Statement.
 
 https://iiif.io/api/presentation/3.0/#rights
 
-> The value MUST be drawn from the set of Creative Commons license URIs, the RightsStatements.org rights statement URIs, or those added via the extension mechanism. 
+> The value MUST be drawn from the set of Creative Commons license URIs, the RightsStatements.org rights statement URIs, or those added via the extension mechanism.
 
 ```json
 {
@@ -164,7 +242,8 @@ Collections MAY include a `partOf` property if we decide to create a top-level c
 https://iiif.io/api/presentation/3.0/#partof
 
 Examples of top-level collections.
+
 - Bodleian
-https://iiif.bodleian.ox.ac.uk/iiif/collection/top
+  https://iiif.bodleian.ox.ac.uk/iiif/collection/top
 - National Library of Scotland
-https://view.nls.uk/collections/top.json
+  https://view.nls.uk/collections/top.json
