@@ -36,6 +36,25 @@ _Individuals_
 
 ## Manifest
 
+### homepage
+
+All manifests SHOULD include a `homepage` property with the arrayed object having an `id` referencing the URL on the Northwestern University Libraries Digital Collections website. The `label` property SHOULD mirror the work title.
+
+https://iiif.io/api/presentation/3.0/#homepage
+
+```json
+{
+  "homepage": [
+    {
+      "id": "https://dc.library.northwestern.edu/items/7298fdce-adc1-4501-9e14-9e8bd985e149",
+      "type": "Text",
+      "label": { "none": ["Pantalone classico"] },
+      "format": "text/html"
+    }
+  ]
+}
+```
+
 ### items
 
 ...
