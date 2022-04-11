@@ -32,12 +32,11 @@ https://iiif.io/api/presentation/3.0/#behavior
 *Individuals*
 > Valid on Collections, Manifests, and Ranges. For Collections that have this behavior, each of the included Manifests are distinct objects in the given order. For Manifests and Ranges, the included Canvases are distinct views, and should not be presented in a page-turning interface. **This is the default layout behavior if not specified.** Disjoint with unordered, continuous, and paged.
 
-## Types
 
-### Manifest
+## Manifest
 
-#### partOf
-All manifests SHOULD include a `partOf` property as all our published works are a part of a collection having a dereferencable IIIF Collection `id`. We MAY also choose to extend out properties in `partOf`to provide minimal contextual information about a work's parent collection -- doing so could limit number of requests on IIIF Collection resources that may have large items length. 
+### partOf
+All manifests SHOULD include a `partOf` property as all our published works are a part of a collection having a dereferencable IIIF Collection `id`. We MAY also choose to extend out properties in `partOf`to provide minimal contextual information about a work's parent collection -- doing so could limit number of requests on IIIF Collection resources that may have large items length. Proposed properties include: `label`, `summary`, `homepage`, and `thumbnail`.
 
 https://iiif.io/api/presentation/3.0/#partof
 
@@ -84,7 +83,7 @@ https://iiif.io/api/presentation/3.0/#partof
 }
 ```
 
-#### requiredStatement
+### requiredStatement
 
 All manifests MUST include a `requiredStatement` with a `label` of **Attribution** and a `value` of **Courtesy of Northwestern University Libraries**. If a work also has a distinct **Terms of Use** value, this SHOULD also be appended to the `value` array.
 
@@ -121,7 +120,7 @@ _Terms of Use_
 }
 ```
 
-#### rights
+### rights
 
 We SHOULD include the dereferenceable URI from a work's Rights Statement.
 
@@ -135,9 +134,31 @@ https://iiif.io/api/presentation/3.0/#rights
 }
 ```
 
-### Collection
+### seeAlso
 
-#### partOf
+We SHOULD include a `seeAlso` property that references the API endpoint which end-users can interact with.
+
+https://iiif.io/api/presentation/3.0/#rights
+
+```json
+{
+  "seeAlso": [
+    {
+      "id": "https://dc.library.northwestern.edu/api/items/7298fdce-adc1-4501-9e14-9e8bd985e149",
+      "type": "Dataset",
+      "label": {
+        "none": ["Northwestern University Libraries Digital Collections API"]
+      },
+      "format": "application/json",
+      "profile": "https://dc.library.northwestern.edu/api/items/context.json"
+    }
+  ]
+}
+```
+
+# Collection
+
+### partOf
 
 Collections MAY include a `partOf` property if we decide to create a top-level collection of collections.
 https://iiif.io/api/presentation/3.0/#partof
