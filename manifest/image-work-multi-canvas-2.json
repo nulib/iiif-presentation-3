@@ -58,6 +58,10 @@
       "value": {
         "none": ["Masks", "Commedia dell'arte", "Italian drama (Comedy)"]
       }
+    },
+    {
+      "label": { "none": ["Work Type"] },
+      "value": { "none": ["Image"] }
     }
   ],
   "requiredStatement": {

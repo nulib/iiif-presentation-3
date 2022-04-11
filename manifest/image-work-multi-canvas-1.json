@@ -63,6 +63,10 @@
           "Pantaloon (Fictitious character)"
         ]
       }
+    },
+    {
+      "label": { "none": ["Work Type"] },
+      "value": { "none": ["Image"] }
     }
   ],
   "requiredStatement": {
