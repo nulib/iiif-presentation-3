@@ -1,6 +1,6 @@
 {
   "@context": ["http://iiif.io/api/presentation/3/context.json"],
-  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/items/iiif-image-collection",
+  "id": "https://acw5dcf49d.execute-api.us-east-1.amazonaws.com/dev/collections/iiif-image-collection",
   "type": "Collection",
   "label": {
     "none": ["Commedia dell'Arte: The Masks of Antonio Fava"]
