@@ -36,9 +36,21 @@ _Individuals_
 
 ## Manifest
 
+### items
+
+...
+
+### label
+
+...
+
+### logo
+
+...
+
 ### metadata
 
-All manifests SHOULD include a `metadata` property with an array of items for each distinct metadata label, e.g., Alternate Title, Subject, and Genre. We SHOULD omit **Rights Statement** and **Terms of Use** and instead use `rights` and `requiredStatement` for these respectively. We MAY also want to consider to including data currently included under _Find This Item_ such as Box Number and Folder Name within the `metadata` property.
+All manifests SHOULD include a `metadata` property with an array of items for each distinct metadata label, e.g., Alternate Title, Subject, and Genre. We SHOULD omit **Rights Statement** and **Terms of Use** and instead use `rights` and `requiredStatement` for these respectively. We MAY also want to consider including data currently under _Find This Item_ such as **Box Number** and **Folder Name** within the `metadata` property.
 
 https://iiif.io/api/presentation/3.0/#metadata
 
@@ -159,6 +171,10 @@ https://iiif.io/api/presentation/3.0/#partof
 }
 ```
 
+### provider
+
+...
+
 ### requiredStatement
 
 All manifests MUST include a `requiredStatement` with a `label` of **Attribution** and a `value` of **Courtesy of Northwestern University Libraries**. If a work also has a distinct **Terms of Use** value, this SHOULD also be appended to the `value` array.
@@ -216,7 +232,7 @@ https://iiif.io/api/presentation/3.0/#rights
 
 We SHOULD include a `seeAlso` property that references the API endpoint which end-users can interact with.
 
-https://iiif.io/api/presentation/3.0/#rights
+https://iiif.io/api/presentation/3.0/#seealso
 
 ```json
 {
@@ -233,6 +249,14 @@ https://iiif.io/api/presentation/3.0/#rights
   ]
 }
 ```
+
+### summary
+
+...
+
+### thumbnail
+
+...
 
 # Collection
 
