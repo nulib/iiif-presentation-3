@@ -2,7 +2,12 @@
 
 A place to mock together Northwestern works and collections as [IIIF Presentation API 3.0](https://iiif.io/api/presentation/3.0/) shapes.
 
-## Common Assumptions
+- [Guidelines](#guidelines)
+- [Manifest](#manifest)
+- [Collection](#collection)
+- [Omitted Properties](#omitted-properties)
+
+## Guidelines
 
 ### Internationalization
 
@@ -23,16 +28,6 @@ https://iiif.io/api/presentation/3.0/#label
   ]
 }
 ```
-
-### Behavior
-
-We do not include behavior until we have have method for determining this. Clients SHOULD interpret our omission of `behavior` on IIIF resources as `individuals`
-
-https://iiif.io/api/presentation/3.0/#behavior
-
-_Individuals_
-
-> Valid on Collections, Manifests, and Ranges. For Collections that have this behavior, each of the included Manifests are distinct objects in the given order. For Manifests and Ranges, the included Canvases are distinct views, and should not be presented in a page-turning interface. **This is the default layout behavior if not specified.** Disjoint with unordered, continuous, and paged.
 
 ## Manifest
 
@@ -290,3 +285,16 @@ Examples of top-level collections.
   https://iiif.bodleian.ox.ac.uk/iiif/collection/top
 - National Library of Scotland
   https://view.nls.uk/collections/top.json
+  
+
+## Omitted Properties
+
+### Behavior
+
+We do not include behavior until we have have method for determining this. Clients SHOULD interpret our omission of `behavior` on IIIF resources as `individuals`
+
+https://iiif.io/api/presentation/3.0/#behavior
+
+_Individuals_
+
+> Valid on Collections, Manifests, and Ranges. For Collections that have this behavior, each of the included Manifests are distinct objects in the given order. For Manifests and Ranges, the included Canvases are distinct views, and should not be presented in a page-turning interface. **This is the default layout behavior if not specified.** Disjoint with unordered, continuous, and paged.
