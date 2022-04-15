@@ -279,7 +279,7 @@ We SHOULD include a `logo` property on a Manifest. The Libraries and RDC likely 
 
 > It is recommended that a IIIF Image API service be available for this image for other manipulations such as resizing.
 
-https://iiif.io/api/presentation/3.0/#seealso
+https://iiif.io/api/presentation/3.0/#logo
 
 ```json
 {
