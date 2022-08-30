@@ -1,0 +1,173 @@
+{
+  "@context": ["http://iiif.io/api/presentation/3/context.json"],
+  "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/public/95/80/a5/83/-0/e0/c-/4e/55/-9/fa/b-/4d/b8/b6/1c/c2/9b-manifest.json",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "Triumph of Death (after Pieter Brueghel the Elder). landsknechts resisting, Death attacking party of aristocrats"
+    ]
+  },
+  "summary": {
+    "none": []
+  },
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "Contributor"
+        ]
+      },
+      "value": {
+        "none": [
+          ""
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Date"
+        ]
+      },
+      "value": {
+        "none": [
+          "2021-03-16T12:11:56.420166Z"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Identifier"
+        ]
+      },
+      "value": {
+        "none": []
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Library Unit"
+        ]
+      },
+      "value": {
+        "none": [
+          "University (MAIN) Library"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Subjects"
+        ]
+      },
+      "value": {
+        "none": [
+          "Painting"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Genre"
+        ]
+      },
+      "value": {
+        "none": [
+          "paintings (visual works)"
+        ]
+      }
+    }
+  ],
+  "requiredStatement": {
+    "label": {
+      "none": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "none": [
+        "Courtesy of Northwestern University Libraries",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted.",
+        "The images on this web site, from material in the collections of Northwestern University Libraries, are provided for use by its students, faculty and staff, and by other researchers visiting this site, for research consultation and scholarly purposes only. Further distribution and/or any commercial use of the images from this site is not permitted."
+      ]
+    }
+  },
+  "rights": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
+  "thumbnail": [],
+  "items": {
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/public/95/80/a5/83/-0/e0/c-/4e/55/-9/fa/b-/4d/b8/b6/1c/c2/9b-manifest.json",
+    "type": "Manifest",
+    "label": {
+      "none": [
+        "Triumph of Death (after Pieter Brueghel the Elder). landsknechts resisting, Death attacking party of aristocrats"
+      ]
+    },
+    "summary": {
+      "none": [
+        "Signed; Dated"
+      ]
+    },
+    "items": [
+      {
+        "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/public/95/80/a5/83/-0/e0/c-/4e/55/-9/fa/b-/4d/b8/b6/1c/c2/9b-manifest.json/canvas/517b89e6-db04-499f-abc5-2ece3bc2eb69",
+        "type": "Canvas",
+        "height": "480",
+        "width": "640",
+        "label": {
+          "none": [
+            "inu-dil-991b2b7f-603b-4ab1-81ee-5e4ec497f3e9.tif"
+          ]
+        },
+        "items": [
+          {
+            "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/public/95/80/a5/83/-0/e0/c-/4e/55/-9/fa/b-/4d/b8/b6/1c/c2/9b-manifest.json/canvas/517b89e6-db04-499f-abc5-2ece3bc2eb69/annotation-page",
+            "type": "AnnotationPage",
+            "items": [
+              {
+                "id": "http://example.org/oa:Annotation/20",
+                "type": "Annotation",
+                "motivation": "painting",
+                "target": "https://iiif.stack.rdc-staging.library.northwestern.edu/public/95/80/a5/83/-0/e0/c-/4e/55/-9/fa/b-/4d/b8/b6/1c/c2/9b-manifest.json/canvas/517b89e6-db04-499f-abc5-2ece3bc2eb69",
+                "body": {
+                  "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/iiif/2/517b89e6-db04-499f-abc5-2ece3bc2eb69/full/600,/0/default.jpg",
+                  "type": "Image",
+                  "label": {
+                    "none": [
+                      "inu-dil-991b2b7f-603b-4ab1-81ee-5e4ec497f3e9.tif"
+                    ]
+                  },
+                  "service": [
+                    {
+                      "@id": "https://iiif.stack.rdc-staging.library.northwestern.edu/iiif/2/517b89e6-db04-499f-abc5-2ece3bc2eb69",
+                      "@type": "ImageService2",
+                      "profile": "level2"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "thumbnail": [
+          {
+            "format": "image/jpeg",
+            "height": 200,
+            "id": "https://iiif.stack.rdc-staging.library.northwestern.edu/iiif/2/517b89e6-db04-499f-abc5-2ece3bc2eb69/full/!200,200/0/default.jpg",
+            "type": "Image",
+            "width": 200
+          }
+        ]
+      }
+    ]
+  }
+}
